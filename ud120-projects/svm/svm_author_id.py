@@ -58,7 +58,4 @@ acc = accuracy_score(pred, labels_test)
 # print (acc,pred10,pred26,pred50)
 print (acc)
 
-
 #########################################################
-
-

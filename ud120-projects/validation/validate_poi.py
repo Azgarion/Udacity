@@ -11,16 +11,18 @@
 """
 
 import pickle
+
 import sys
+sys.path.append("../tools/")
+from feature_format import featureFormat, targetFeatureSplit
+
 import numpy
 
 from time import time
 from sklearn import tree
 from sklearn.metrics import accuracy_score
 from sklearn.cross_validation import train_test_split
-from feature_format import featureFormat, targetFeatureSplit
 
-sys.path.append("../tools/")
 
 data_dict = pickle.load(
     open("../final_project/final_project_dataset.pkl", "r"))
